@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw2 - main page</title>
+    <title>hw2-main page</title>
+    <link rel="stylesheet" href="./css/styles-index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <a href="./portfolio.html">portfolio</a>
-    <header>
-        <a href="#"><strong>Web</strong>Studio</a>
-    <nav>
-      <ul>
-        <li><a href="#">Agencja</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-    <ul>
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:48111111111">+48 111 111 111</a></li>
-    </ul>
-    </header>
-    <section>
-        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
-      </section>
+  <header class="header">
+    <a class="header-logo" href="./index.html">WebStudio</a>
+<nav>
+  <ul>
+    <li><a class="header-linki-agencja" href="./index.html">Agencja</a></li>
+    <li><a class="header-linki" href="./portfolio.html">Portfolio</a></li>
+    <li><a class="header-linki" href="#">Kontakt</a></li>
+  </ul>
+</nav>
+<ul>
+  <li><a class="header-stopka-blue" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+  <li><a class="header-stopka" href="tel:48111111111">+48 111 111 111</a></li>
+</ul>
+</header>
+
+<section class="title">
+  <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+  <button class="title-button" type="button">Zamów usługe</button>
+</section>
     
 <!-- text -->
-<section>
+<section class="txt1">
     <ul>
       <li>
-        <p>
-        <strong>LOREM IPSUM</strong>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-      </p>
+        <h4>LOREM IPSUM</h4>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
       </li>
       <li>
-        <p>
-          <strong>LOREM IPSUM</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-        </p>
+        <h4>LOREM IPSUM</h4>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
+      </li>
+       <li>
+        <h4>LOREM IPSUM</h4>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
       </li>
       <li>
-        <p>
-          <strong>LOREM IPSUM</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>LOREM IPSUM</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-        </p>
-      </li>
+        <h4>LOREM IPSUM</h4>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
+      </li>       
     </ul>
   </section>
-    <!-- images 1 -->
+
     <section>
-      <h2>What we do</h2>
+      <h2>Czym się zajmujemy</h2>
       <ul>
         <li>
           <img src="./images/images-1/computer-keyboard1.jpg" alt="keyboard" width="370" height="294">
@@ -71,63 +70,41 @@
         </li>
       </ul>
     </section>
-    <!-- images Our Team -->
-    <section>
-      <h2>Our Team</h2>
+  
+    <section class="txt2">
+      <h2>Nasz zespół</h2>
       <ul>
         <li>
           <img src="./images/images-team2/christopher-walker1.jpg" alt="Christopher Walker" width="270" height="260">
+          <h4>Christopher Walker</h4>
+          <p>Product Designer</p>
       </li>
         <li>
           <img src="./images/images-team2/kylie-evans2.jpg" alt="Kylie Evans" width="270" height="260">
+          <h4>Kylie Evans</h4>
+          <p>Frontend Developer</p>
         </li>
         <li>
           <img src="./images/images-team2/ryan-harris3.jpg" alt="Ryan Harris" width="270" height="260">
+          <h4>Harris</h4>
+          <p>Marketing</p> 
         </li>
         <li>
           <img src="./images/images-team2/tyler-moore4.jpg" alt="Tyler Moore" width="270" height="260">
+          <h4>Tyler Moore</h4>
+          <p>UI Designer</p>
         </li>
       </ul>
     </section>
-
-    <!-- photo captions -->
-    <section>
-      <ul>
-        <li>
-          <p>
-          <strong>Christopher Walker</strong>
-          Product Designer
-        </p>
-        </li>
-        <li>
-          <p>
-          <strong>Kylie Evans</strong>
-          Frontend Developer
-        </p>
-        </li>
-        <li>
-          <p>
-          <strong>Ryan Harris</strong>
-          Marketing
-        </p>
-        </li>
-        <li>
-          <p>
-          <strong>Tyler Moore</strong>
-          UI Designer
-        </p>
-        </li>
-      </ul>
-    </section>
-<footer>
-  <p><strong>Web</strong>Studio</p>
-    <address>
-      m. Warszawa, Aleje Jerozolimskie 21
-      </address>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:48111111111">+48 111 111 111</a></li>
-      </ul>
-</footer>
-</body>
-</html>
+    <footer class="footer">
+      <p class="footer-logo">WebStudio</p> 
+        <address class="address">
+            m. Warszawa, Aleje Jerozolimskie 21
+         <ul>
+            <li><a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="address-tel" href="tel:48111111111">+48 111 111 111</a></li>
+          </ul>
+        </address> 
+    </footer>
+    </body>
+    </html>
