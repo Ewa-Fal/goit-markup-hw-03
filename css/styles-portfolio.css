@@ -1,44 +1,101 @@
+:root {
+    box-sizing: border-box;
+    --color-white: rgba(255, 255, 255, 1);
+    --color-white2: rgba(255, 255, 255, 0.6);
+    --color-gray: rgba(245, 244, 250, 1);
+    --color-gray2: rgba(117, 117, 117, 1);
+    --color-dark: rgba(47, 48, 58, 1);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-black2: rgba(33, 33, 33, 1);
+    --color-blue: rgba(33, 150, 243, 1);
+    --color-tlo1:rgba(47, 48, 58, 1);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: rgba(33, 33, 33);
+    color: var(--color-black2);
+    background-color: var(--color-white);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+
 .header {
     font-size: 14px;
+    background-color: var(--color-white);
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px;
+    border-color: #ececec;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 93px;
 }
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: var(--color-black);
+    justify-content: space-between;
+    align-items: center;
+    gap: 93px;
+    margin-right: 93px;
 }
 .header-logo .blue {
-    color: rgb(33, 150, 243);
+    color: var(--color-blue);
 }
 .header-stopka {
-    color:rgba(117, 117, 117);
+    color:var(--color-gray2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-linki {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 46px;
 }
 .header-linki, 
-.header-linki-porfolio, 
-.header-stopka,
+.header-linki-agencja, 
+.header-stopka-blue,
+.header-stopka-tel,
 .footer-tel,
-.footer-mail {
+.footer-mail,
+.txt-l {
     text-decoration: none;
-    color: rgba(33, 33, 33);
+    color: var(--color-gray2);
 }
-.header .header-linki-porfolio:hover,
-.header .header-linki-porfolio:focus,
-.footer .footer-tel:hover,
-.footer .footer-tel:focus,
-.footer .footer-mail:hover,
-.footer .footer-mail:focus
+.header-stopka-blue:hover,
+.header-stopka-blue:focus,
+.header-linki-agencja:hover,
+.header-linki-agencja:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-mail:focus
  {
-    color:rgba(33, 150, 243);
+    color:var(--color-blue);
 }
+
+
 .cursor-button, .cursor-button-w {
     font-family: 'Roboto';
     font-weight: 500;
@@ -66,7 +123,13 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: rgb(33, 33, 33);      
+    color: rgb(33, 33, 33);
+    list-style: none;  
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;    
 }
 p {
     font-weight: 400;
@@ -75,16 +138,17 @@ p {
     letter-spacing: 0.03em;    
     color: rgb(117, 117, 117); 
 }
-.footer .adres {
+
+
+
+
+.adres {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-color: black;
-    /* tymczasowo dałam czarny kolor bo tło będzie w kolejnym zadaniu.Powinno być:
-    color: rgb(255, 255, 255, 1);
-    */
+    color: var(--color-white);
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -92,8 +156,16 @@ color: black;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
+    color: var(--color-white)
 }
 .footer-logo .blue {
-    color: rgb(33, 150, 243);
+    color: var(--color-blue);
+}
+.footer {
+background: var(--color-dark);
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.footer-mail, .footer-tel {
+    color: var(--color-white2);
 }
