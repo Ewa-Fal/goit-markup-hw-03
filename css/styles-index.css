@@ -1,86 +1,188 @@
+:root {
+    box-sizing: border-box;
+    --color-white: rgba(255, 255, 255, 1);
+    --color-white2: rgba(255, 255, 255, 0.6);
+    --color-gray: rgba(245, 244, 250, 1);
+    --color-gray2: rgba(117, 117, 117, 1);
+    --color-dark: rgba(47, 48, 58, 1);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-black2: rgba(33, 33, 33, 1);
+    --color-blue: rgba(33, 150, 243, 1);
+    --color-tlo1:rgba(47, 48, 58, 1);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(33, 33, 33);
+    color: var(--color-black2);
+    background-color: var(--color-white);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
 }
 .header {
     font-size: 14px;
-    color: rgba(33, 33, 33, 1);
+    background-color: var(--color-white);
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px;
+    border-color: #ececec;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 93px;
 }
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    color: rgb(33, 150, 243);
+    color: var(--color-black);
+    justify-content: space-between;
+    align-items: center;
+    gap: 93px;
+    margin-right: 93px;
 }
-.header-linki {
-    color: rgba(33, 33, 33, 1);
-}
-.header-linki-agencja,
-.header-stopka-blue {
-    color:rgba(33, 150, 243, 1);
+.header-logo .blue {
+    color: var(--color-blue);
 }
 .header-stopka {
-    color:rgba(117, 117, 117, 1);
+    color:var(--color-gray2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-linki {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 46px;
 }
 .header-linki, 
 .header-linki-agencja, 
-.header-stopka,
 .header-stopka-blue,
-.address-tel {
+.header-stopka-tel,
+.footer-tel,
+.footer-mail,
+.txt-l {
     text-decoration: none;
+    color: var(--color-gray2);
 }
-.header .header-stopka:hover,
-.header .header-stopka:focus,
-.header .header-stopka-blue:hover,
-.header .header-stopka-blue:focus,
-.address .address-tel:hover,
-.address .address-tel:focus,
-.address .address-mail:hover,
-.address .address-mail:focus {
-    color: rgb(19, 226, 19);
+.header-stopka-blue:hover,
+.header-stopka-blue:focus,
+.header-linki-agencja:hover,
+.header-linki-agencja:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-mail:focus
+ {
+    color:var(--color-blue);
 }
 .title-button {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.06em;
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    background: var(--color-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
 }
-.txt1 {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-
-color: rgb(33, 33, 33);
+.title {
+    font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+    color: var(--color-white);
+    background-color: var(--color-tlo1);
+    padding-top: 200px;
+    padding-bottom: 280px;
+    left: 452px;
+    top: 280px;
 }
-.txt1
-p {
+.lorem {
+    list-style: none;
+    text-align: left;
+    color: var(--color-black2);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-l {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.txt-1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--color-gray2);
+}
+.images {
+    text-align: center;    
+}
+.fot {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 30px;
+}
+.teams {
+    
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px; 
+}
+.shadow {
+    
+    background: var(--color-white);
+    gap: 30px; 
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team {
+    text-align: center;
+    background: var(--color-gray);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+}
+.adres {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgb(117, 117, 117);  
-}
-.address {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-color: black;
-    /* tymczasowo dałam czarny kolor bo nie ma tła. Powinno być:
-    color: rgb(255, 255, 255, 1);
-    */
+    color: var(--color-white);
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -88,30 +190,16 @@ color: black;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: rgb(33, 150, 243);
+    color: var(--color-white)
 }
-.txt2 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+.footer-logo .blue {
+    color: var(--color-blue);
 }
-p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;    
-    letter-spacing: 0.03em;    
-    color: rgb(117, 117, 117, 1); 
+.footer {
+background: var(--color-dark);
+padding-top: 60px;
+padding-bottom: 60px;
 }
-.address {
-    font-style: normal;
-}
-.address-mail {
-    color: black;
-/* kolor zastępczy dopóki nie będzie czarnego tła. Powinien być: 
-color: rgba(255, 255, 255, 0,6);
-*/
-}
-.address-tel {
-    color: black;
+.footer-mail, .footer-tel {
+    color: var(--color-white2);
 }
