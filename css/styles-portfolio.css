@@ -27,45 +27,18 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 0 15px;
+    padding: 0;
 }
-
-
-
 .header {
     font-size: 14px;
     background-color: var(--color-white);
-    display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px;
-    border-color: #ececec;
-    border-style: solid;
+    border-bottom: 1px solid rgb(236, 236, 236);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 93px;
-}
-.header-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
-    color: var(--color-black);
-    justify-content: space-between;
-    align-items: center;
-    gap: 93px;
-    margin-right: 93px;
-}
-.header-logo .blue {
-    color: var(--color-blue);
-}
-.header-stopka {
-    color:var(--color-gray2);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 50px;
 }
 .header-linki {
     list-style: none;
@@ -73,20 +46,42 @@ body {
     align-items: center;
     gap: 46px;
 }
-.header-linki, 
-.header-linki-agencja, 
-.header-stopka-blue,
+.header-stopka {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-stopka-mail,
 .header-stopka-tel,
 .footer-tel,
-.footer-mail,
-.txt-l {
-    text-decoration: none;
+.footer-mail {   
     color: var(--color-gray2);
 }
-.header-stopka-blue:hover,
-.header-stopka-blue:focus,
-.header-linki-agencja:hover,
-.header-linki-agencja:focus,
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--color-black);
+    margin-right: 93px;
+}
+.header-logo .blue {
+    color: var(--color-blue);
+}
+.header-linki, 
+.header-linki-portfolio, 
+.header-stopka-mail,
+.header-stopka-tel,
+.footer-tel,
+.footer-mail {
+    text-decoration: none;
+} 
+.header-stopka-mail:hover,
+.header-stopka-mail:focus,
+.header-linki-portfolio:hover,
+.header-linki-portfolio:focus,
 .footer-tel:hover,
 .footer-tel:focus,
 .footer-mail:hover,
@@ -94,12 +89,19 @@ body {
  {
     color:var(--color-blue);
 }
-
-
+.cursor {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    gap: 30px; 
+    align-items: center;
+    justify-content: center;
+}
 .cursor-button, .cursor-button-w {
     font-family: 'Roboto';
     font-weight: 500;
-    /* musiałam powtórzyć font z 'body' bo inaczej font nie wyświetla się grubszy  ? */
     font-size: 16px;
     line-height: 1.14;
     text-align: center;
@@ -108,40 +110,48 @@ body {
     height: 38px;
     left: 510px;
     top: 174px;
-    background-color: rgba(245, 244, 250);
+    background-color: var(--color-gray);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 .cursor-button-w {
-    color: rgba(255, 255, 255);
-    background-color: rgba(33, 150, 243);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
 }
-.txt {
+.card {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: rgb(33, 33, 33);
+    color: var(--color-black2);
     list-style: none;  
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    gap: 30px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+} 
+.img {
+    background:var(--color-white);
+    border: 1px solid rgb(238, 238, 238);         
+    }
+.card-2, .card-1 {
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
-p {
+p, .card-2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;    
     letter-spacing: 0.03em;    
-    color: rgb(117, 117, 117); 
+    color: var(--color-gray2);    
 }
-
-
-
-
 .adres {
     font-style: normal;
     font-weight: 400;
