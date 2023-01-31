@@ -30,62 +30,76 @@ body {
     padding: 0;
 }
 .header {
+    display: flex;
     font-size: 14px;
-    background-color: var(--color-white);
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(236, 236, 236);    
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--color-black);
+}
+.logo .blue {
+    color: var(--color-blue);
+}
+.link, .link-agencja, .link-mail, .logo {
+    text-decoration: none;
+}
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 93px;
 }
-.header-linki {
-    list-style: none;
+.navigation-list {
     display: flex;
-    align-items: center;
+    list-style: none;
     gap: 46px;
 }
-.header-stopka {
-    list-style: none;
-    text-decoration: none;
+.nav-link {
+    color: var(--color-black2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.navigation-stopka {
     display: flex;
-    align-items: center;
     gap: 50px;
+    list-style: none; 
 }
-.header-stopka-mail,
-.header-stopka-tel,
-.footer-tel,
-.footer-mail {   
+.stopka {
     color: var(--color-gray2);
-}
-.header-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--color-black);
-    margin-right: 93px;
 }
-.header-logo .blue {
+.stopka-mail:hover {
     color: var(--color-blue);
-}
-.header-linki, 
-.header-linki-portfolio, 
-.header-stopka-mail,
-.header-stopka-tel,
+} 
+.link-tel,
+.link-mail,
 .footer-tel,
 .footer-mail {
     text-decoration: none;
-} 
-.header-stopka-mail:hover,
-.header-stopka-mail:focus,
-.header-linki-portfolio:hover,
-.header-linki-portfolio:focus,
-.footer-tel:hover,
-.footer-tel:focus,
-.footer-mail:hover,
-.footer-mail:focus
+    color: var(--color-gray2);
+}
+.link-agencja:hover, .link-agencja:focus, 
+.link-mail:hover, .link-mail:focus,
+.footer-tel:hover, .footer-tel:focus,
+.footer-mail:hover, .footer-mail:focus
  {
     color:var(--color-blue);
 }

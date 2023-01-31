@@ -29,38 +29,22 @@ body {
     padding: 0 15px;
 }
 .header {
+    display: flex;
     font-size: 14px;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid rgb(236, 236, 236);    
 }
-.header-linki {
-    list-style: none;
-    display: inline-flex;
+.head {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-content: flex-start;
-}
-.header-linki > .head:not(:last-child) {
-    margin-right: 50px;
-}
-.header-stopka {
-    list-style: none;   
-    display: inline-flex;
-    align-content: flex-end;
-}
-.header-stopka > .head:not(:last-child) {
-    margin-right: 46px;
-}
-.header-stopka .link,
-.header-stopka .link-mail {
-    color: var(--color-gray2);   
 }
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     color: var(--color-black);
-    margin-right: 93px;
 }
 .logo .blue {
     color: var(--color-blue);
@@ -68,19 +52,53 @@ body {
 .link, .link-agencja, .link-mail, .logo {
     text-decoration: none;
 }
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 93px;
+}
+.navigation-list {
+    display: flex;
+    list-style: none;
+    gap: 46px;
+}
+.nav-link {
+    color: var(--color-black2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.navigation-stopka {
+    display: flex;
+    gap: 50px;
+    list-style: none; 
+}
+.stopka {
+    color: var(--color-gray2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.stopka-mail:hover {
+    color: var(--color-blue);
+} 
+.link-tel,
+.link-mail,
 .footer-tel,
 .footer-mail {
     text-decoration: none;
     color: var(--color-gray2);
 }
-.link-agencja:hover,
-.link-agencja:focus,
-.link-mail:hover,
-.link-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus,
-.footer-mail:hover,
-.footer-mail:focus
+.link-agencja:hover, .link-agencja:focus, 
+.link-mail:hover, .link-mail:focus,
+.footer-tel:hover, .footer-tel:focus,
+.footer-mail:hover, .footer-mail:focus
  {
     color:var(--color-blue);
 }
@@ -117,20 +135,27 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
+    
 }
 .title-l {
+    font-style: normal;
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-    flex-basis: calc((100% - 90px) / 4);
 }
 .txt-1 {
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.87;
+    font-size: 14px;
+    line-height: 1.71;
+
     letter-spacing: 0.03em;
     color: var(--color-gray2);
+    
 }
 .images {
     text-align: center;    
