@@ -51,7 +51,7 @@ body {
     gap: 93px; 
 }
 .navigation-list {
-    font-style: normal;;
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -63,33 +63,25 @@ body {
 .navigation-stopka {
     display: flex;
     gap: 50px;
-    list-style: none; 
+    list-style: none;
 }
 .stopka {
-    color: var(--color-gray2);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 } 
-.link-tel,
-.link-mail,
-.footer-tel,
-.footer-mail {
-    text-decoration: none;
+.link-tel, .link-mail,
+.footer-tel, .footer-mail {
     color: var(--color-gray2);
+    text-decoration: none;
 }
-.link-agencja:hover, .link-agencja:focus, 
+.link:hover, .link:focus,
 .link-mail:hover, .link-mail:focus,
-.footer-tel:hover, .footer-tel:focus,
-.footer-mail:hover, .footer-mail:focus
+.link-tel:hover, .link-tel:focus
  {
     color:var(--color-blue);
-}
-.stopka-mail:hover {
-    color: var(--color-blue);
 }
 .logo {
     font-family: 'Raleway';
